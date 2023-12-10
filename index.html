@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fauzul Aziz</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://kit.fontawesome.com/7c6bc1a975.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <!-- ============================= Header ============================================= -->
+    <header class="header">
+      <div class="kiri">
+        <img src="images/Logo1blue.png" class="logo" />
+      </div>
+      <div class="kanan">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <div class="kanan-hp">
+        <ul id="sidemenu">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+        </ul>
+        <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+      </div>
+    </header>
+    <!-- ============================== Home ============================================ -->
+    <div id="home">
+      <div class="container">
+        <div class="home">
+          <p>UI/UX Designer & Front-end Developer</p>
+          <h1>Hi, i'm <span>Fauzul</span> Aziz<br />From Indonesia</h1>
+          <a href="doc/CV_Fauzul Aziz.pdf" download><button>Downlaod CV</button></a>
+          <a href="#contact"><button class="hire-me">Hire Me</button></a>
+        </div>
+      </div>
+    </div>
+    <!-- ============================= about ============================================ -->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="images/user2.png" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p>
+              Graduated in Informatics from Semen Indonesia International University. Born in Pamekasan on October 10, 1997. Proficient in computer programming with Dart Flutter for Android applications, HTTPS CSS for the web, Python, and
+              graphic design. Has work experience in an IT company as a junior developer responsible for creating and improving features for web and Android applications. Enjoys playing music and crafting with wood and iron. Ready to learn
+              more and leverage the skills I possess for a career in the office or in the field.
+            </p>
+
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+              <p class="tab-links" onclick="opentab('experience')">Experience</p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li><span>UI/UX</span><br />Designing Web/App Interfaces</li>
+                <li><span>Web Development</span><br />Bulding Web Front-end</li>
+                <li><span>Apps Development</span><br />Bulding Android Apps Front-end</li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li><span>2021</span><br />PT Sinergi Informatika Semen Indonesia,<br />as a Mobile Apps Developer & UI/UX Designner</li>
+                <li><span>2019</span><br />PT Barata Indonesia,<br />SAP ERP team, <br />Entry physical data into the SAP ERP system</li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="education">
+              <ul>
+                <li><span>2016 - 2020</span><br />Universitas Internasional Semen Indonesia<br />Informatics</li>
+                <li><span>2013 - 2015</span><br />SMA Tahfidz Al-amien (IPA)</li>
+                <li><span>2010 - 2012</span><br />SMP Tahfidz Al-amien</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ============================== services============================= -->
+    <div id="services">
+      <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+          <div>
+            <i class="fa-sharp fa-solid fa-code"></i>
+            <h2>Web Development</h2>
+            <p>Creating a Front-end WEB using HTML, CSS and JS</p>
+            <a href="#portfolio">Learn more</a>
+          </div>
+          <div>
+            <i class="fa-solid fa-crop"></i>
+            <h2>UI/UX Design</h2>
+            <p>Creating a UI/UX Apps and WEB using Figma or Adobe XD</p>
+            <a href="#portfolio">Learn more</a>
+          </div>
+          <div>
+            <i class="fa-brands fa-app-store"></i>
+            <h2>App Development</h2>
+            <p>Creating a Front-end Android Application using Flutter Dart</p>
+            <a href="#portfolio">Learn more</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ========================================= Portfolio ================================================= -->
+    <div id="portfolio">
+      <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+          <div class="work">
+            <img src="images/Work1.png" />
+            <div class="layer">
+              <h3>Silih Apps</h3>
+              <p>Application for borrowing goods on the UISI campus</p>
+              <a href="https://xd.adobe.com/view/f8d258d1-4dc5-4e0e-8ff9-f2a5f1556352-ad81/" target="_blank"
+                ><button><i class="fa-solid fa-arrow-up-right-from-square"></i></button
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/Work2.png" />
+            <div class="layer">
+              <h3>CRM WEB</h3>
+              <p>Customer relationship management WEB for PT Semen Indonesia</p>
+              <a href="https://xd.adobe.com/view/b7350722-945e-43bd-bfe5-d03ce5264f28-e266/" target="_blank"
+                ><button><i class="fa-solid fa-arrow-up-right-from-square"></i></button
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/Work3.png" />
+            <div class="layer">
+              <h3>POS Retail Apps</h3>
+              <p>A point of sale Apps for PT Semen Indonesia</p>
+              <a href="https://xd.adobe.com/view/383acf12-7bf5-4780-85c7-1d0b67b19f18-6d69/" target="_blank"
+                ><button><i class="fa-solid fa-arrow-up-right-from-square"></i></button
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/Work4.png" />
+            <div class="layer">
+              <h3>Logistic Apps</h3>
+              <p>UI/UX Logistic Apps for delivery of goods</p>
+              <a href="https://www.figma.com/file/N6lUoyA1N776vMTlq9r43F/Logistic-Mobile-Apps?node-id=0%3A1" target="_blank"
+                ><button><i class="fa-solid fa-arrow-up-right-from-square"></i></button
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/Work5.png" />
+            <div class="layer">
+              <h3>Logistic WEB</h3>
+              <p>UI/UX Logistic WEB for delivery of goods</p>
+              <a href="https://www.figma.com/file/FYWfZP9mEOC4pr86FZhFTk/Logistic-WEB?node-id=0%3A1" target="_blank"
+                ><button><i class="fa-solid fa-arrow-up-right-from-square"></i></button
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/Work6.png" />
+            <div class="layer">
+              <h3>GameLab Apps</h3>
+              <p>UI/UX GameLab Apps For search good mentor</p>
+              <a href="https://www.figma.com/file/deHXhxvbsKPMj8ogrfumvY/gamelab-Mobile?node-id=0%3A1" target="_blank"
+                ><button><i class="fa-solid fa-arrow-up-right-from-square"></i></button
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/Work7.png" />
+            <div class="layer">
+              <h3>GameLab WEB</h3>
+              <p>UI/UX GameLab WEB For search good mentor</p>
+              <a href="https://www.figma.com/file/jfpURiTRD5VNeIuCAD41Uk/gamelab-WEB?node-id=0%3A1" target="_blank"
+                ><button><i class="fa-solid fa-arrow-up-right-from-square"></i></button
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/Work8.png" />
+            <div class="layer">
+              <h3>RayWhite WEB</h3>
+              <p>UI/UX RayWhite WEB For search a property</p>
+              <a href="https://www.figma.com/file/V4hjCCCmAlQGljUbHcLHnk/RayWhite?type=design&node-id=0-1&mode=design" target="_blank"
+                ><button><i class="fa-solid fa-arrow-up-right-from-square"></i></button
+              ></a>
+            </div>
+          </div>
+        </div>
+        <a href="https://drive.google.com/drive/folders/1HG-gnhsdyRIAirEjTk2H_jJSYtET3lso?usp=share_link" target="_blank" class="btn">See more</a>
+      </div>
+    </div>
+    <!-- ============================== Contact ========================== -->
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p><i class="fa-solid fa-square-envelope"></i>fauzulaziz97@gmail.com</p>
+            <p><i class="fa-solid fa-square-phone"></i>+62 8523-4166-699</p>
+            <div class="sosialmedia-icon">
+              <a href="https://www.linkedin.com/in/fauzul-aziz/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+              <a href="https://www.instagram.com/fauzulaziz_/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+              <a href="https://twitter.com/fauzulaziz_" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+              <a href="https://www.facebook.com/profile.php?id=100011764329832" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+            </div>
+            <a class="btn btn2" href="doc/CV_Fauzul Aziz.pdf" download>Download CV</a>
+          </div>
+          <div class="contact-right">
+            <form name="submit-to-google-sheet">
+              <input type="text" name="Name" placeholder="Your Name" required />
+              <input type="email" name="Email" placeholder="Your Email" required />
+              <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+              <button type="submit" class="btn btn2">Submit</button>
+            </form>
+            <span id="msg"></span>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>Copyright © Fauzul Aziz</p>
+      </div>
+    </div>
+
+    <!-- JS untuk tab di About Me -->
+    <script>
+      var tablinks = document.getElementsByClassName("tab-links");
+      var tabcontents = document.getElementsByClassName("tab-contents");
+
+      function opentab(tabname) {
+        for (tablink of tablinks) {
+          tablink.classList.remove("active-link");
+        }
+        for (tabcontent of tabcontents) {
+          tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+      }
+    </script>
+
+    <!-- JS untuk tab di Side Menu HP -->
+    <script>
+      var sidemenu = document.getElementById("sidemenu");
+      function openmenu() {
+        sidemenu.style.right = "0";
+      }
+      function closemenu() {
+        sidemenu.style.right = "-150px";
+      }
+    </script>
+
+    <!-- JS untuk Google Sheet -->
+    <script>
+      const scriptURL = "https://script.google.com/macros/s/AKfycbydEvVwIzIwa8L23i2YXS3JpZaH6-KxZs3OozoMHKp5irxJGGftof8x3kpcquQW9nmc3g/exec";
+      const form = document.forms["submit-to-google-sheet"];
+      const msg = document.getElementById("msg");
+
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        fetch(scriptURL, { method: "POST", body: new FormData(form) })
+          .then((response) => {
+            msg.innerHTML = "Message Sent";
+            setTimeout(function () {
+              msg.innerHTML = "";
+            }, 5000);
+            form.reset();
+          })
+          .catch((error) => console.error("Error!", error.message));
+      });
+    </script>
+  </body>
+</html>
